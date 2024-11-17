@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Content Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 500px;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Content Generator</h1>
+        <form action="/generate" method="POST">
+            <label>Enter your prompt:</label><br>
+            <textarea name="prompt" rows="4" placeholder="What's on your mind?"></textarea><br>
+
+            <label>Select Tone:</label>
+            <select name="tone">
+                <option value="casual">Casual</option>
+                <option value="professional">Professional</option>
+                <option value="friendly">Friendly</option>
+                <option value="humorous">Humorous</option>
+            </select><br>
+
+            <label>Select Audience:</label>
+            <select name="audience">
+                <option value="general">General</option>
+                <option value="tech">Tech</option>
+                <option value="business">Business</option>
+            </select><br>
+
+            <button type="submit"><i class="fas fa-magic"></i> Generate Content</button>
+        </form>
+    </div>
+</body>
+</html>
