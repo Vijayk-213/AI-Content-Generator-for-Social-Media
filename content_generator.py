@@ -4,10 +4,6 @@ from textblob import TextBlob
 import nltk
 nltk.download('punkt_tab')
 
-# Set your Gemini API credentials here
-# GEMINI_API_KEY = 'AIzaSyB7fsn1vfkUo-YV0QwEXewy1T4kmbERmYY'
-# GEMINI_API_URL = 'https://api.gemini-platform.com/v1/generate'
-
 # Function to generate content using Gemini API
 # def generate_content(prompt, max_tokens=100, temperature=0.7):
 #     headers = {
